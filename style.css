@@ -1,0 +1,114 @@
+html{
+    background-color: #C5E8DC;
+}
+
+header{
+    background-color: #C5E8DC;
+    height: 120px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 40px;
+}
+
+.buscador {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+
+.buscador:focus {
+    outline: none;
+    border-color: #999;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #65C3A1;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.nombre-item {
+    margin-left: 100px;
+    align-items: center;
+    width: 500px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nombre-item:hover {
+    background-color: #65C3A1;
+    border-radius: 10px;
+}
+
+.detalle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3EB489;
+}
+
+.lista{
+    background-color: #8BD2B8;
+    padding: 20px;
+}
+
+
+@media (max-width: 1024px) {
+.nombre-item:hover{
+    width: 300px;
+}
+}
+
+@media (max-width: 768px) {
+    .nombre-item:hover{
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .buscador{
+        margin-left: -5px;
+    }
+
+    .boton{
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+
+    .text{
+        font-size: 30px;
+    }
+    
+}
